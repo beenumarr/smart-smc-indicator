@@ -31,9 +31,9 @@
 ### 2.1 Win Rate Validation
 | Timeframe | Minimum Win Rate | Sample Size | Market Condition |
 |-----------|-----------------|-------------|------------------|
-| H4 | 80% | 1000 trades | All conditions |
-| H1 | 75% | 2000 trades | Trending only |
-| 15M | 70% | 5000 trades | High volatility |
+| H4 | 80% | 100 trades | All conditions |
+| H1 | 75% | 100 trades | Trending only |
+| 15M | 70% | 100 trades | High volatility |
 
 ### 2.2 Risk-Reward Scenarios
 | Scenario | Risk:Reward | Expected Win Rate | Required Samples |

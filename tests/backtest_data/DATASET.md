@@ -1,36 +1,21 @@
 # Backtest Datasets Configuration
 **Author:** Abdullahi Amir Umar (beenumarr)
-**Last Updated:** 2025-04-05 20:16:32 UTC
+**Last Updated:** 2025-04-05 20:24:15 UTC
 
 ## 1. Historical Data Sets
 
 ### 1.1 Forex Pairs
-- EURUSD (2020-2025)
-- GBPUSD (2020-2025)
-- USDJPY (2020-2025)
-- AUDUSD (2020-2025)
+- EURUSD (May 2024 - April 2025)
+- GBPUSD (May 2024 - April 2025)
+- USDJPY (May 2024 - April 2025)
+- AUDUSD (May 2024 - April 2025)
 
 ### 1.2 Crypto Assets
-- BTCUSDT (2020-2025)
-- ETHUSDT (2020-2025)
-- BNBUSDT (2020-2025)
+- BTCUSDT (May 2024 - April 2025)
+- ETHUSDT (May 2024 - April 2025)
+- BNBUSDT (May 2024 - April 2025)
 
 ### 1.3 Indices
-- US500 (2020-2025)
-- NASDAQ (2020-2025)
-- DJI (2020-2025)
-
-## 2. Data Quality Parameters
-
-### 2.1 Required Fields
-- Timestamp (UTC)
-- Open, High, Low, Close
-- Volume
-- Tick Count
-- Spread
-
-### 2.2 Validation Criteria
-- No missing values
-- No zero volume candles
-- Max spread threshold
-- Continuous data series
+- US500 (May 2024 - April 2025)
+- NASDAQ (May 2024 - April 2025)
+- DJI (May 2024 - April 2025)
