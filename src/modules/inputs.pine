@@ -1,0 +1,19 @@
+//@version=5
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ Inputs Module                                                                ║
+// ║ Author: Abdullahi Amir Umar                                                 ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
+
+import * as constants from "./constants"
+
+// General Settings
+mode = input.string('Historical', options=['Historical', 'Present'], 
+    group='Smart Money Concepts', tooltip=constants.MODE_TOOLTIP)
+
+style = input.string('Colored', options=['Colored', 'Monochrome'],
+    group='Smart Money Concepts', tooltip=constants.STYLE_TOOLTIP)
+
+show_trend = input(false, 'Color Candles',
+    group='Smart Money Concepts', tooltip=constants.COLOR_CANDLES_TOOLTIP)
+
+[... rest of your input parameters ...]

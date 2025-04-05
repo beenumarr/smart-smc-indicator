@@ -1,29 +1,27 @@
+//@version=5
 // ╔══════════════════════════════════════════════════════════════════════════════╗
-// ║                                                                              ║
 // ║ Constants Module                                                             ║
-// ║ Part of Smart SMC Indicator                                                  ║
-// ║                                                                              ║
+// ║ Author: Abdullahi Amir Umar                                                 ║
 // ╚══════════════════════════════════════════════════════════════════════════════╝
 
 // Colors
-var color TRANSP_CSS = #ffffff00
-var color BULL_COLOR = #089981
-var color BEAR_COLOR = #f23645
-var color NEUTRAL_COLOR = #b2b5be
+color TRANSP_CSS = #ffffff00
 
-// Timeframes
-var string HTF = "240"  // 4H
-var string MTF = "60"   // 1H
-var string LTF = "15"   // 15M
+// Tooltips
+string MODE_TOOLTIP          = 'Allows to display historical Structure or only the recent ones'
+string STYLE_TOOLTIP         = 'Indicator color theme'
+string COLOR_CANDLES_TOOLTIP = 'Display additional candles with a color reflecting the current trend detected by structure'
+[... rest of your tooltips constants ...]
 
-// Order Block Settings
-var float OB_ATR_MULTIPLE = 2.0
-var int OB_LOOKBACK = 20
+// Default colors
+var color DEFAULT_BULL_COLOR = #089981
+var color DEFAULT_BEAR_COLOR = #f23645
+var color DEFAULT_NEUTRAL_COLOR = #b2b5be
 
-// FVG Settings
-var float FVG_THRESHOLD = 0.1
-var int FVG_EXTEND = 5
-
-// Structure Settings
-var int SWING_LENGTH = 50
-var int EQ_LENGTH = 3
+export {
+    TRANSP_CSS,
+    MODE_TOOLTIP,
+    STYLE_TOOLTIP,
+    COLOR_CANDLES_TOOLTIP,
+    // ... export other constants
+}

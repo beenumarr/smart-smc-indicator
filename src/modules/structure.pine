@@ -1,0 +1,35 @@
+//@version=5
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ Market Structure Module                                                      ║
+// ║ Author: Abdullahi Amir Umar                                                 ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
+
+// Swings detection/measurements
+swings(len)=>
+    var os = 0
+    
+    upper = ta.highest(len)
+    lower = ta.lowest(len)
+
+    os := high[len] > upper ? 0 : low[len] < lower ? 1 : os[1]
+
+    top = os == 0 and os[1] != 0 ? high[len] : 0
+    btm = os == 1 and os[1] != 1 ? low[len] : 0
+
+    [top, btm]
+
+// Display Structure function
+display_Structure(x, y, txt, css, dashed, down, lbl_size)=>
+    structure_line = line.new(x, y, n, y,
+        color=css,
+        style=dashed ? line.style_dashed : line.style_solid)
+
+    structure_lbl = label.new(int(math.avg(x, n)), y, txt,
+        color=TRANSP_CSS,
+        textcolor=css,
+        style=down ? label.style_label_down : label.style_label_up,
+        size=lbl_size)
+
+    if mode == 'Present'
+        line.delete(structure_line[1])
+        label.delete(structure_lbl[1])
