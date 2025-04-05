@@ -1,0 +1,29 @@
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║                                                                              ║
+// ║ Market Structure Module                                                      ║
+// ║ Part of Smart SMC Indicator                                                  ║
+// ║                                                                              ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
+
+// Swing Detection Function
+swings(len) =>
+    var os = 0
+    
+    upper = ta.highest(len)
+    lower = ta.lowest(len)
+
+    os := high[len] > upper ? 0 : low[len] < lower ? 1 : os[1]
+
+    top = os == 0 and os[1] != 0 ? high[len] : 0
+    btm = os == 1 and os[1] != 1 ? low[len] : 0
+
+    [top, btm]
+
+// Structure Break Detection
+detectStructureBreak(current_trend, prev_swing, current_price) =>
+    break = false
+    if current_trend > 0 and current_price > prev_swing
+        break := true
+    else if current_trend < 0 and current_price < prev_swing
+        break := true
+    break

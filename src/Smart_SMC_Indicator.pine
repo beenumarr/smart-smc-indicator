@@ -1,0 +1,27 @@
+//@version=5
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║                                                                              ║
+// ║ Smart SMC Indicator                                                          ║
+// ║ Version: 1.0 (Alpha)                                                         ║
+// ║ Author: Abdullahi Amir Umar                                                  ║
+// ║ Last Updated: 2025-04-05                                                     ║
+// ║                                                                              ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
+
+indicator("Smart SMC Indicator", "Smart SMC Indicator"
+  , overlay = true
+  , max_labels_count = 500
+  , max_lines_count = 500
+  , max_boxes_count = 500
+  , max_bars_back = 500)
+
+// Import local files
+//@import "modules/constants"
+//@import "modules/market_structure"
+//@import "modules/order_blocks"
+//@import "modules/fair_value_gaps"
+//@import "modules/premium_discount"
+//@import "modules/swing_points"
+//@import "modules/alerts"
+
+[Your existing code goes here]
